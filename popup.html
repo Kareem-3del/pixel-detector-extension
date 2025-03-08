@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marketing Pixel Detector</title>
+    <style>
+        body {
+            width: 320px;
+            padding: 15px;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 18px;
+            color: #222;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .pixel-container {
+            margin-top: 15px;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .pixel-item {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+        .pixel-item:last-child {
+            border-bottom: none;
+        }
+
+        .pixel-name {
+            flex: 1;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .status {
+            padding: 5px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .active {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .inactive {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+<h1>Marketing Pixel Detector</h1>
+<div id="loading">Scanning for pixels...</div>
+<div id="results" class="pixel-container" style="display: none;"></div>
+<button id="scan" class="button">Scan Again</button>
+<script src="popup.js"></script>
+</body>
+</html>
